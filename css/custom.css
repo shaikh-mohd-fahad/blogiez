@@ -1,0 +1,188 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	overflow-x:hidden;
+}
+
+.leftside{
+	width: 25%;
+	position: fixed;
+	left: 0;
+	top: 56px;
+	bottom:0px;
+	overflow-y:auto;
+	display:none;
+}
+a{
+	text-decoration:none !important;
+}
+/* btn24 on post page*/
+.btn24{
+	width:24%;
+}
+.rightside{
+	position:absolute;
+	left:25%;
+	top:56px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	margin:10px;
+	width:73%;
+}
+#comment{
+	height:300px;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+/* icon toggle used on navbar */
+.openIconToggle{
+	background:#fff;
+	width:22px;
+	height:22px;
+	position:absolute;
+	z-index:20;
+	top:22px;
+	left:15px;
+	cursor:pointer;
+}
+/* img1 is class of thumbnail on index.php page */
+.img1{
+	height: 120px;
+	width: 100%;
+	max-width:100%;
+}
+/* cover image used in profile.php and edit_profile.php page*/
+#img2{
+	height: 400px;
+	width: 100%;
+	max-width:100%;
+}
+/*cover used in profile.php*/
+#cover{
+	position:relative;
+}
+/* user_profile_img_on_cover on edit_profile.php and  profile.php page*/
+#user_profile_img_on_cover{
+	height:200px;
+	width:200px;
+}
+/*div1 used in profile.php*/
+#div1,#user_cover_form{
+	position:absolute;
+	top:10px;
+	right: 25px;
+}
+/*div2 used in profile.php*/
+#div2{
+	position:absolute;
+	bottom:10px;
+	left:30px;
+}
+/* btn1 used for input file for uploading user profile in profile.php*/
+#btn1{
+	left:50%;
+	bottom:50px;
+}
+#para p{
+	margin-bottom: 0;
+}
+/* #thumbnail on post page*/
+#thumbnail{
+	width:100%;
+	height:450px;
+}
+.btn_hover:hover{
+	color:#007bff;
+}
+@media (min-width:769px){
+	/* post_box is inside profile page ... */
+	.post_box{
+		margin-left:1rem;
+		padding-left:1.5rem;
+		padding-right:1.5rem;
+		padding-top:1rem;
+		padding-bottom:1rem;
+		margin-bottom:15px;
+	}
+	/* user_detail is inside profile page ... */
+	#user_detail{
+		padding-left:0px;
+	}
+}
+/* creating website responsive from here ... */
+@media (max-width:768px){
+	/* img1 is class of thumbnail on index.php page */
+	.img1{
+		height: 150px;
+	}
+	/* h3 is class of thumbnail on index.php page */
+	.h3{
+		font-size:20px;
+		font-weight:501;
+		margin:5px;
+	}
+	/* breadcrumb is used  on post.php page */
+	.breadcrumb{
+		margin-bottom:5px;
+	}
+	/* post_box is inside profile page ... */
+	.post_box{
+		padding:1.5rem;
+		margin-top:15px;
+	}
+	/* nav-container is inside profile page ... */
+	#nav-container{
+		max-width:100%;
+	}
+	/* #thumbnail on post page*/
+	#thumbnail{
+		height:160px;
+	}
+	.add-post-container{
+    max-width: 100%;
+	}
+	.heading{
+		font-size:18px;
+	}
+	.rightside{
+	left: 0%;
+	width: 100%;
+	padding: 2.5%;
+	margin: 0px;
+	}
+	/* cover image used in profile.php and edit_profile.php page*/
+	#img2{
+		height: 200px;
+	}
+	/* user_profile_img_on_cover on edit_profile.php and  profile.php page*/
+	#user_profile_img_on_cover{
+		height:60px;
+		width:60px;
+		margin-left: 20px;
+		margin-bottom: 5px;
+	}
+	/* #btn1 on edit_profile.php and  profile.php page*/
+	#btn1{
+		left: 49%;
+		bottom: 17px;
+		width: 70px;
+	}
+	#box{
+		margin-left:30px;
+		margin-right:30px;
+	}
+	#main-content h1{font-size:18px}
+	.post_box a h3{font-size:18px}
+}
+@media (max-width:992px){
+	.btn{
+		font-size:12px;
+	}
+}
+.shadow{
+	box-shadow:2px 2px 8px #d5d5d6;
+}
+@media (min-width:768px){
+#main-content h1{font-size:2rem}
+}

@@ -1,0 +1,30 @@
+RewriteEngine On
+##RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteEngine on
+errorDocument 403 https://www.blogiez.com/error.php
+errorDocument 404 https://www.blogiez.com/error.php
+# Disable Directory Browsing
+Options All -Indexes
+
+RewriteRule index index.php [L]
+RewriteRule conn.php index.php [L]
+RewriteRule following following.php [L]
+RewriteRule login login.php [L]
+RewriteRule signup signup.php [L]
+#RewriteRule profile profile.php [L]
+RewriteRule logout logout.php [L]
+RewriteRule follow_List follow_List.php [L]
+RewriteRule add_post add_post.php [L]
+RewriteRule edit_profile edit_profile.php [L]
+RewriteRule error error.php [L]
+RewriteRule forgot_pass forgot_pass.php [L]
+
+RewriteRule ^cat/([a-zA-Z0-9_-]+)$ index.php?category=$1 [QSA,L] 
+RewriteRule ^cat/([a-zA-Z0-9_-]+)/$ index.php?category=$1 [QSA,L] 
+
+RewriteRule ^user/([a-zA-Z0-9_-]+)$ profile.php?username=$1 [QSA,L]
+RewriteRule ^user/([a-zA-Z0-9_-]+)/$ profile.php?username=$1 [QSA,L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ post.php?seo_title=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/$ post.php?seo_title=$1 [L]
